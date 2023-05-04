@@ -106,10 +106,12 @@
         min-height: 155px;
         width: 125px;
         height: 155px;
-        border: 1px solid #ccc;
+        /* border: 1px solid #ccc; */
         border-radius: 4px;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
-        background-color: #ffffff;
+        /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; */
+        /* background-color: #ffffff; */
+        /* justify-content: center; */
+        
       }
     </style>
     <script src="jquery-1.8.2.js"></script>
@@ -541,7 +543,7 @@
     </script>
   </head>
   <body>
-    <table width="100%" style="padding-top: 0px">
+    <table width="100%"  style="padding-top: 0px; height: 100vh;">
       <!-- <tr>
             <td colspan="3" align="center" style="color: #428BCA; font-size: 20px; font-weight:bold;">
                 MANTRA-MFS100-TEST
@@ -559,29 +561,24 @@
         </tr> -->
 
       <tr>
-        <td style="width: 250px">
-          <table align="left" border="0" width="100%">
-            <tr>
-              <td width="250px" height="190px" align="center" class="img">
+        <td >
+          <table width="100%"  border="0">
+            <tr >
+              <td   colspan="3" align="center" class="img" >
                 <img
+
+                  src="https://images.unsplash.com/photo-1606567595334-d39972c85dbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmlyZHxlbnwwfHwwfHw%3D&w=1000&q=80"
                   id="imgFinger"
                   width="250px"
-                  height="188px"
+                  height="388px"
                   alt="Finger Image"
                 />
               </td>
             </tr>
             <tr>
-              <td>
-                <select id="typeSelector" class="btn btn-primary">
-                  <option selected value="type1">Type1</option>
-                  <option value="type2">Type2</option>
-                  <option value="type3">Type3</option>
-                  <option value="type4">Type4</option>
-                </select>
-              </td>
-              <td>
+              <td align="right" style="padding-right: 50px; padding-top: 20px;">
                 <input
+                style="background-color:#353a3e; color:white; border-radius:15px;"
                   type="submit"
                   id="btnCapture"
                   value="Capture"
@@ -589,12 +586,23 @@
                   onclick="return Capture()"
                 />
               </td>
-              <td>
+              <td align="left" style="padding-left: 50px; padding-top: 20px;">
+                <select id="typeSelector" class="btn btn-primary btn-100" style="background-color:#353a3e; color:white; border-radius:15px;">
+                  <option selected value="type1">Type1</option>
+                  <option value="type2">Type2</option>
+                  <option value="type3">Type3</option>
+                  <option value="type4">Type4</option>
+                </select>
+              </td>
+            </tr>
+            <tr >
+              <td colspan="2" align="center" style="padding-top: 20px;">
                 <input
                   type="submit"
                   id="save"
-                  value="Save"
-                  class="btn btn-success btn-100"
+                  value="Submit Information"
+                  style="background-color:#353a3e; color:white; border-radius:15px;";
+                  class="btn btn-200"
                   onclick="return save()"
                 />
               </td>
