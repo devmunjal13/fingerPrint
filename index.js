@@ -22,7 +22,7 @@ const storage = multer.diskStorage({
 // create the multer instance
 const upload = multer({ storage: storage });
 
-app.listen("3001", () => {
+app.listen("3000", () => {
   console.log("Server Started On PORT: 3000");
 });
 
